@@ -1,0 +1,171 @@
+/* --------------------------------------------------
+   2000s Y2K Hot Pink Styles
+   -------------------------------------------------- */
+
+:root {
+  --bg-color: #ff66b2;
+  --card-bg: #ffe6f0;
+  --border-color: #ff007f;
+  --text-color: #800040;
+  --accent-color: #ff1493;
+  --btn-color: #ff007f;
+  --btn-text: #ffffff;
+  --font-scale: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+  font-size: var(--font-scale);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header Styling */
+.header-box {
+  text-align: center;
+  background-color: var(--card-bg);
+  border: 3px solid var(--border-color);
+  border-radius: 20px;
+  padding: 15px 30px;
+  box-shadow: 4px 4px 0px var(--border-color);
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 850px;
+}
+
+h1 {
+  margin: 0 0 5px 0;
+  font-size: 2rem;
+  color: var(--border-color);
+}
+
+.subtitle {
+  margin: 0;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+/* Status Bar */
+.status-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  background-color: var(--card-bg);
+  border: 3px solid var(--border-color);
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 4px 4px 0px var(--border-color);
+  margin-bottom: 25px;
+  width: 100%;
+  max-width: 850px;
+}
+
+.status-item {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.badge {
+  background-color: #ffffff;
+  color: var(--border-color);
+  padding: 3px 10px;
+  border-radius: 12px;
+  border: 1.5px solid var(--border-color);
+  font-weight: bold;
+}
+
+/* Grid Layout */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 850px;
+}
+
+/* Cards */
+.card {
+  background-color: var(--card-bg);
+  border: 3px solid var(--border-color);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 4px 4px 0px var(--border-color);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: var(--border-color);
+}
+
+/* Button */
+.pink-btn {
+  background-color: var(--btn-color);
+  color: var(--btn-text);
+  border: 2px solid #ffffff;
+  padding: 10px 20px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0px var(--border-color);
+  margin-top: 10px;
+}
+
+.pink-btn:hover {
+  transform: scale(1.05);
+}
+
+.pink-btn:active {
+  transform: scale(0.95);
+}
+
+/* Interactive Displays */
+.key-display {
+  display: inline-block;
+  background-color: #ffffff;
+  color: var(--border-color);
+  border: 2px solid var(--border-color);
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.touch-box {
+  background-color: #ffffff;
+  border: 2px dashed var(--border-color);
+  color: var(--border-color);
+  padding: 25px 15px;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  margin-top: 10px;
+}
+
+/* Footer */
+.footer-box {
+  margin-top: 30px;
+  background-color: var(--card-bg);
+  border: 3px solid var(--border-color);
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 0px var(--border-color);
+  font-weight: bold;
+  font-size: 0.9rem;
+}

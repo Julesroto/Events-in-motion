@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jules Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Title Header -->
+  <header class="header-box">
+    <h1 id="main-title">💖 Jules Website 💖</h1>
+    <p class="subtitle">Welcome to my page! Click, type, and tap around!</p>
+  </header>
+
+  <!-- Live Status Bar -->
+  <div class="status-bar" id="status-bar">
+    <div class="status-item">
+      <span>Theme:</span>
+      <span id="theme-mode" class="badge">Hot Pink</span>
+    </div>
+    <div class="status-item">
+      <span>Key Pressed:</span>
+      <span id="last-key" class="badge">None</span>
+    </div>
+    <div class="status-item">
+      <span>Window Width:</span>
+      <span id="window-size" class="badge">--</span>px
+    </div>
+  </div>
+
+  <!-- Main Grid Container -->
+  <main class="container">
+
+    <!-- Card 1: Mouse Action -->
+    <section class="card" id="card-mouse">
+      <h2>✨ Mouse Action ✨</h2>
+      <p>Click the button to switch the palette theme!</p>
+      <button id="theme-btn" class="pink-btn">Switch Theme 💕</button>
+    </section>
+
+    <!-- Card 2: Keyboard Action -->
+    <section class="card" id="card-keyboard">
+      <h2>⌨️ Keyboard Action ⌨️</h2>
+      <p>Press any key on your keyboard!</p>
+      <div id="key-badge" class="key-display">Ready 💖</div>
+    </section>
+
+    <!-- Card 3: Touch / Tap Action -->
+    <section class="card" id="card-touch">
+      <h2>📱 Touch Action 📱</h2>
+      <p>Click or tap inside the box below!</p>
+      <div id="touch-area" class="touch-box">Tap Me! ✨</div>
+    </section>
+
+  </main>
+
+  <!-- Footer with Live Timer -->
+  <footer class="footer-box" id="footer-box">
+    <span>💖 Online Time: </span>
+    <span id="timer-display" class="badge">0</span>
+    <span> seconds 💖</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
